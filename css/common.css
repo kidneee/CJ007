@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/* 共通 */
+body {
+  font-family: 'Crimson Text', serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #2d2d2d;
+  line-height: normal;
+}
+
+a {
+  color: #2d2d2d;
+  text-decoration: none;
+}
