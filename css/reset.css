@@ -153,3 +153,6 @@ button {
   color: inherit;
   background: none;
 }
+picture {
+  display: block;
+}
