@@ -2,14 +2,55 @@
 
 /* 共通 */
 body {
-  font-family: 'Crimson Text', serif;
+  font-family: 'Hiragino Kaku Gothic ProN', sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #2d2d2d;
+  color: #24292e;
   line-height: normal;
 }
 
 a {
   color: #2d2d2d;
   text-decoration: none;
+}
+
+.header__inner,
+.section__inner {
+  max-width: 960px;
+  padding: 0 4%;
+  margin: 0 auto;
+}
+
+/* header */
+/* header__inner */
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* global-nav */
+.global-nav__title {
+  display: none;
+}
+
+.global-nav__list {
+  display: flex;
+}
+
+/* main */
+
+/* works */
+.works__list {
+  display: grid;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  gap: 23px;
+}
+
+.works .list__item {
+  /* width: 31%; */
+}
+
+.works__image {
 }

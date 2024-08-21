@@ -10,25 +10,34 @@
   </head>
   <body>
     <!-- header -->
-    <header>
-      <h1>
-        <a href="/"><img src="./img/logo.svg" alt="My Work Portfolio" /></a>
-      </h1>
+    <header class="header">
+      <!-- header__inner -->
+      <div class="header__inner">
+        <h1>
+          <a href="/">
+            <img src="./img/logo.svg" width="120" height="27" class="header__logo" alt="My Work Portfolio" />
+          </a>
+        </h1>
 
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#works">Works</a></li>
-          <li><a href="#news">News</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li>
-            <a href="https://www.instagram.com/"><img src="./img/icon-instagram.png" width="20" height="20" alt="Instagram" /></a>
-          </li>
-        </ul>
-      </nav>
+        <!-- global-nav -->
+        <nav class="global-nav">
+          <h2 class="global-nav__title">グローバルナビゲーション</h2>
+          <ul class="global-nav__list">
+            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#works" class="nav__link">Works</a></li>
+            <li class="nav__item"><a href="#news" class="nav__link">News</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            <li class="nav__item">
+              <a href="https://www.instagram.com/"><img src="./img/icon-instagram.png" width="20" height="20" alt="Instagram" /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
+    <!-- main -->
     <main>
+      <!-- main-visual -->
       <div class="main-visual">
         <picture>
           <source srcset="./img/mainvisual-pc.jpg" media="(min-width: 601px)" type="image/jpg" />
@@ -52,16 +61,16 @@
       </section>
 
       <!-- Works -->
-      <section id="works">
+      <section id="works" class="works section">
         <div class="section__inner">
-          <h2>Works</h2>
-          <ul>
-            <li><img src="./img/works1.jpg" alt="" /></li>
-            <li><img src="./img/works2.jpg" alt="" /></li>
-            <li><img src="./img/works3.jpg" alt="" /></li>
-            <li><img src="./img/works4.jpg" alt="" /></li>
-            <li><img src="./img/works5.jpg" alt="" /></li>
-            <li><img src="./img/works6.jpg" alt="" /></li>
+          <h2 class="section__title">Works</h2>
+          <ul class="works__list">
+            <li class="list__item"><img src="./img/works1.jpg" class="works__image" alt="" /></li>
+            <li class="list__item"><img src="./img/works2.jpg" class="works__image" alt="" /></li>
+            <li class="list__item"><img src="./img/works3.jpg" class="works__image" alt="" /></li>
+            <li class="list__item"><img src="./img/works4.jpg" class="works__image" alt="" /></li>
+            <li class="list__item"><img src="./img/works5.jpg" class="works__image" alt="" /></li>
+            <li class="list__item"><img src="./img/works6.jpg" class="works__image" alt="" /></li>
           </ul>
         </div>
       </section>
@@ -69,17 +78,17 @@
       <!-- News -->
       <section id="news">
         <div class="section__inner">
-          <h2>News</h2>
-          <dl>
-            <dt>2020.XX.XX</dt>
+          <h2 class="section__title">News</h2>
+          <dl class="section__">
+            <dt><time datetime="2020-XX-XX">2020.XX.XX</time></dt>
             <dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。</dd>
-            <dt>2020.XX.XX</dt>
+            <dt><time datetime="2020-XX-XX">2020.XX.XX</time></dt>
             <dd>ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。</dd>
-            <dt>2020.XX.XX</dt>
+            <dt><time datetime="2020-XX-XX">2020.XX.XX</time></dt>
             <dd>【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</dd>
-            <dt>2020.XX.XX</dt>
+            <dt><time datetime="2020-XX-XX">2020.XX.XX</time></dt>
             <dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。</dd>
-            <dt>2020.XX.XX</dt>
+            <dt><time datetime="2020-XX-XX">2020.XX.XX</time></dt>
             <dd>【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</dd>
           </dl>
         </div>
@@ -105,6 +114,7 @@
       </section>
     </main>
 
+    <!-- footer -->
     <footer>
       <div class="footer__inner">
         <small class="footer__copyright">&copy; 2020 My Work</small>
