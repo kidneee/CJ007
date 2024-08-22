@@ -156,3 +156,14 @@ button {
 picture {
   display: block;
 }
+
+input,
+textarea {
+  width: 100%;
+  box-sizing: content-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  border: none;
+}

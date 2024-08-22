@@ -47,7 +47,7 @@
 
       <!-- About -->
       <section id="about">
-        <div class="section__inner">
+        <div class="about__inner section__inner">
           <h2 class="section__title">About</h2>
           <div class="about__content">
             <span class="about__name">Xxxxx Ashley</span>
@@ -64,7 +64,7 @@
 
       <!-- Works -->
       <section id="works" class="works section">
-        <div class="section__inner">
+        <div class="works__inner section__inner">
           <h2 class="section__title">Works</h2>
           <ul class="works__list">
             <li class="list__item"><img src="./img/works1.jpg" class="works__image" alt="" /></li>
@@ -79,7 +79,7 @@
 
       <!-- News -->
       <section id="news" class="news section">
-        <div class="section__inner">
+        <div class="news__inner section__inner">
           <h2 class="section__title">News</h2>
           <dl class="news__list">
             <div class="list__item">
@@ -108,21 +108,21 @@
 
       <!-- Contact -->
       <section id="contact" class="contact">
-        <div class="section__inner">
+        <div class="contact__inner section__inner">
           <h2 class="section__title">Contact</h2>
           <form action="sample.php" method="post" class="contact-form">
             <dl class="contact-form__list">
               <div class="list__item">
-                <dt>NAME</dt>
-                <dd><input type="text" name="name" id="" /></dd>
+                <dt class="contact-form__label">NAME</dt>
+                <dd class="contact-form__input"><input type="text" name="name" /></dd>
               </div>
               <div class="list__item">
-                <dt>E-mail</dt>
-                <dd><input type="email" name="email" id="" /></dd>
+                <dt class="contact-form__label">E-mail</dt>
+                <dd class="contact-form__input"><input type="email" name="email" /></dd>
               </div>
               <div class="list__item">
-                <dt>MESSAGE</dt>
-                <dd><textarea name="message" id=""></textarea></dd>
+                <dt class="contact-form__label">MESSAGE</dt>
+                <dd class="contact-form__input--large"><textarea wrap="soft" name="message"></textarea></dd>
               </div>
             </dl>
             <button type="submit" class="contact-form__btn">送信</button>
