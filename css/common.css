@@ -1,11 +1,20 @@
 @charset "UTF-8";
+/* コピペ用コード */
+.font-size-dummy {
+  font-size: 0.75rem; /* 12px */
+  font-size: 0.8125rem; /* 13px */
+  font-size: 0.875rem; /* 14px */
+  font-size: 1rem; /* 16px */
+  font-size: 1.25rem; /* 20px */
+  font-size: 1.75rem; /* 28px */
+}
 
 /* 共通 */
 body {
   font-family: 'Hiragino Kaku Gothic ProN', sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 14.4px;
+  font-size: 0.9rem;
   color: #24292e;
   line-height: normal;
 }
@@ -24,7 +33,7 @@ a {
 }
 
 .section__title {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
   margin-bottom: 65px;
@@ -129,6 +138,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin-bottom: 30px;
 }
 
 .contact .list__item {
@@ -137,10 +147,14 @@ a {
   grid-template-columns: 15% 85%;
 }
 
-.contact-form__input {
+.contact-form__input,
+.contact-form__input--large {
   width: 100%;
-  height: 44px;
   border: 1px solid #c8c8c8;
+}
+
+.contact-form__input {
+  height: 44px;
 }
 
 .contact-form__btn {
@@ -153,8 +167,11 @@ a {
 }
 
 /* footer */
-.footer__inner {
+.footer {
   background: #24292e;
+}
+
+.footer__inner {
   height: 32px;
   display: flex;
   flex-direction: column;
@@ -165,6 +182,6 @@ a {
 .footer__copyright {
   display: block;
   color: #fff;
-  font-size: 8px;
+  font-size: 0.5rem;
   text-align: center;
 }
